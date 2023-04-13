@@ -24,14 +24,13 @@ const HomePage = () => {
     <>
     <Container>
       <Card>
-        <CardTitle>
-
+        <CardTitle tag='h2'>
+          Image 1
         </CardTitle>
-        <CardImg>
-
-        </CardImg>
+        <hr></hr>
+        <CardImg top src="https://placeimg.com/640/480/tech" alt="Card image cap" />
         <CardText>
-          
+        Some quick example text to build on the card title and make up image 1
         </CardText>
       </Card>
     </Container>
@@ -39,3 +38,5 @@ const HomePage = () => {
   )
 
 }
+
+export default HomePage;
