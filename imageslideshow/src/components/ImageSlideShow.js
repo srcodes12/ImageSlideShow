@@ -1,34 +1,30 @@
 let i = 0;
 let images = [];
 
-images[0] = "/images/xuxspace.png";
-images[1] = "/images/test3.png";
-images[2] = "/images/xuxa.gif";
-images[3] = "/images/crownedsss (1).png";
-images[4] = "/images/onlyburns10.png";
-images[5] = "/images/betrayerbanner.png";
-images[6] = "/images/xuxwater.png";
-images[7] = "/images/xuxspace2.png";
-images[8] = "/images/xuxgfx.png";
+images[0] = "https://images.unsplash.com/photo-1499510011104-7b5473f3fa2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
+images[1] = "https://images.unsplash.com/photo-1536708882829-9e29ac9bfb20?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
+images[2] = "https://images.unsplash.com/photo-1470751168426-9c816c6649f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
+images[3] = "https://images.unsplash.com/photo-1482779204992-4e4e7d1db10c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
+images[4] = "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
 
 function changeLeft() {
   document.slide.src = images[i];
-  if (i <= 8 && i > 0) {
+  if (i <= 4 && i > 0) {
     i--;
   } else {
     if (i === 0) {
-      i = i + 8;
+      i = i + 4;
     }
   }
 }
 
 function changeRight() {
   document.slide.src = images[i];
-  if (i >= 0 && i < 8) {
+  if (i >= 0 && i < 4) {
     i++;
   } else {
-    if (i === 8) {
-      i = i - 8;
+    if (i === 4) {
+      i = i - 4;
     }
   }
 }
@@ -47,16 +43,4 @@ function img3() {
 }
 function img4() {
   document.slide.src = images[4];
-}
-function img5() {
-  document.slide.src = images[5];
-}
-function img6() {
-  document.slide.src = images[6];
-}
-function img7() {
-  document.slide.src = images[7];
-}
-function img8() {
-  document.slide.src = images[8];
 }

@@ -22,7 +22,7 @@ const HomePage = () => {
 
   return (
     <>
-    <Container>
+    <Container >
       <Card>
         <CardTitle tag='h2'>
           Image 1
